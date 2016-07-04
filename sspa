@@ -33,8 +33,15 @@ function check_node_deps() {
 
 function dev_server() {
   cd public
+<<<<<<< 9ed53aabd5b49766399b65df485eeadd5a744702
   #pippo
   exec python -m SimpleHTTPServer 9292
+=======
+  # python 2
+  #exec python -m SimpleHTTPServer 9292
+  # python 3
+  exec python -m http.server 9292
+>>>>>>> Minor fix to run script on windows with cygwin, python 3.5
 }
 
 function livereload_server() {
