@@ -34,9 +34,9 @@ function check_node_deps() {
 function dev_server() {
   cd public
   # python 2
-  #exec python -m SimpleHTTPServer 9292
+  exec python -m SimpleHTTPServer 9292
   # python 3
-  exec python -m http.server 9292
+  #exec python -m http.server 9292
 }
 
 function livereload_server() {
